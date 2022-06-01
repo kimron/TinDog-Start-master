@@ -82,6 +82,7 @@ p{
 #testimonials{
   text-align: center;
   background-color: #ef8172;
+  color: #fff;
 
 }
 
@@ -94,7 +95,7 @@ h2{
   font-weight: bold;
   font-size: 3rem;
   line-height: 1.5;
-  color: #fff;
+
 
 }
 
@@ -114,4 +115,16 @@ h2{
 
   width: 15%;
   margin: 1.3rem 1.3rem 3.1rem;
+}
+
+#pricing{
+  padding: 5% 10%;
+  text-align: center;
+}
+.btn-sign{
+  width: 90%;
+}
+
+.pricing-column{
+  padding: 3% 2%;
 }
