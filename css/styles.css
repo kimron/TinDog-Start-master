@@ -1,6 +1,10 @@
+
+
 #title{
   background-color:  #ff4c68;
   color: #fff;
+  position: absolute;
+  z-index: -1;
 }
 
 h1{
@@ -62,7 +66,10 @@ p{
 
 #features{
   padding: 8%;
-  text-align: center;
+  text-align: right;
+  position: absolute;
+  top: 50px;
+  z-index: 0;
 
 }
 
