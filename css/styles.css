@@ -1,24 +1,17 @@
 #title {
   background-color: #ff4c68;
   color: #fff;
+  text-align: left;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-}
-
-h2 {
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-h3 {
-  font-size: 1.5rem;
 }
 
 
@@ -32,20 +25,32 @@ p {
   font-weight: 900;
   font-size: 3.2rem;
   line-height: 1.5;
+
 }
 
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
 
+/* Container */
 .container-fuild {
   padding: 3% 15% 5%;
 }
 
+.colored-section{
+  color: #fff;
+}
+.white-section{
+  color: black;
+}
+
+/* Styling nav-bar used from bootstrap */
 .navbar-brand {
   font-family: 'ubuntu', sans-serif;
   font-size: 2.3rem;
   font-weight: bold;
 }
-
-
 
 .navbar {
   padding-bottom: 4.4rem;
@@ -61,6 +66,7 @@ p {
   font-weight: 400;
 }
 
+/* Styling Iphone image on desktop */
 .iphone-img {
   width: 20%;
   transform: rotate(25deg);
@@ -75,15 +81,20 @@ p {
 
 
 
-
+/* feature-section */
 #features {
   padding: 8%;
-  text-align: center;
   background-color: #fff;
   position: relative;
   z-index: 1;
   /* bottom: 180px; */
 }
+
+.feature-title{
+  font-size: 1.5rem;
+}
+
+
 
 .fa-img {
   padding-bottom: 5%;
@@ -98,10 +109,15 @@ p {
   padding: 0 4%;
 }
 
+/* testimonial-section */
+
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
-  color: #fff;
+}
+
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .carousel-item {
@@ -118,7 +134,6 @@ p {
 
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%
 }
 
@@ -127,9 +142,15 @@ p {
   margin: 1.3rem 1.3rem 3.1rem;
 }
 
+
+/* pricing section */
 #pricing {
   padding: 5% 10%;
-  text-align: center;
+}
+
+.price-text{
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .btn-sign {
@@ -152,29 +173,36 @@ p {
   }
 }
 
+@media (min-width:1307px){
+  #title {
+    z-index: -1;
+  }
+
+  .iphone-img {
+    position: absolute;
+    width: 15%;
+  }
+}
+
+
 #cta {
   background-color: #ff4c68;
-
-  text-align: center;
   padding: 7% 22%;
 }
 
-.action-call {
+/* .action-call {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 3.5rem;
-  color: #fff;
-  padding-bottom: 5%;
   line-height: 1.5;
-}
+} */
 
 .btn-action {
   margin: 5px 10px;
 }
 
 #footer {
-  height: 10rem;
-  text-align: center;
+  /* height: 10rem; */
   padding: 5%;
 }
 
