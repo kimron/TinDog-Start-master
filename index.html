@@ -23,7 +23,7 @@
 
 <body>
   <!-- First section tag of webpage -->
-  <section id="title">
+  <section class="colored-section" id="title">
 
     <!-- Bootstrap container-fuild class -->
     <div class="container-fuild">
@@ -92,23 +92,26 @@
 
   <!-- Features -->
 
-  <section id="features">
+  <section class="white-section" id="features">
+    <!-- Setting a div as row to contain columns built with bootstrap -->
     <div class="row">
+      <!-- Using bootstrap columns for website responsive-ness based on screensize (large screens using 4 units which gives 12/4 = 3 columns) (medium screens/tablets using 12 units which gives 12/12 = 1 column etc)  -->
       <div class="col-lg-4 col-md-12 col-sm-12 col-pad">
+        <!-- Using Font Awsome icon image -->
         <i class="fa-solid fa-circle-check fa-3x fa-img"></i>
-        <h3>Easy to use.</h3>
+        <h3 class="feature-title">Easy to use.</h3>
         <p>So easy to use, even your dog could do it.</p>
       </div>
-
+      <!-- col-pad is used to add bootstrap class padding to columns -->
       <div class="col-lg-4 col-md-12 col-sm-12 col-pad">
         <i class="fa-solid fa-bullseye fa-3x fa-img"></i>
-        <h3>Elite Clientele</h3>
+        <h3 class="feature-title">Elite Clientele</h3>
         <p>We have all the dogs, the greatest dogs.</p>
       </div>
 
       <div class="col-lg-4 col-md-12 col-sm-12 col-pad">
         <i class="fa-solid fa-heart fa-3x fa-img"></i>
-        <h3>Guaranteed to work.</h3>
+        <h3 class="feature-title">Guaranteed to work.</h3>
         <p>Find the love of your dog's life or your money back.</p>
       </div>
 
@@ -120,19 +123,21 @@
 
   <!-- Testimonials -->
 
-  <section id="testimonials">
+  <section class="colored-section" id="testimonials">
 
+    <!-- Using bootstrap carousel slide class containing div -->
     <div id="carouselSlide" class="carousel slide " data-bs-ride="carousel">
 
-
+      <!-- implementing bootstrap carousel indicators div additionally to project -->
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
       </div>
-
+      <!-- carousel-inner div containing data that will be displayed in each slide -->
       <div class="carousel-inner">
+
         <div class="carousel-item active " data-bs-interval="7000">
-          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
           <img class="dog-image" src="images/dog-img.jpg" alt="dog-profile">
           <em>Pebbles, New York</em>
         </div>
@@ -143,6 +148,7 @@
         </div>
 
       </div>
+      <!-- Buttons to navigate sildes on carousel-side -->
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlide" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -151,20 +157,15 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+
     </div>
-
-
-
-
-
-
 
   </section>
 
 
   <!-- Press -->
 
-  <section id="press">
+  <section class="white-section" id="press">
     <img class="press-img" src="images/TechCrunch.png" alt="tc-logo">
     <img class="press-img" src="images/tnw.png" alt="tnw-logo">
     <img class="press-img" src="images/bizinsider.png" alt="biz-insider-logo">
@@ -175,23 +176,23 @@
 
   <!-- Pricing -->
 
-  <section id="pricing">
+  <section class="white-section" id="pricing">
 
-    <h2>A Plan for Every Dog's Needs</h2>
+    <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
 
-
+    <!-- Using bootstrap row and columns/Grid to display pricing -->
     <div class="row">
-
-
       <div class="pricing-column col-lg-4 col-md-6">
+
+        <!-- Nesting bootstrap "Card/card-header/card-body" Div class inside of bootstrap grid for prices -->
         <div class="card">
 
           <div class="card-header">
             <h3>Chihuahua</h3>
           </div>
           <div class="card-body">
-            <h2>Free</h2>
+            <h2 class="price-text">Free</h2>
             <p>5 Matches Per Day</p>
             <p>10 Messages Per Day</p>
             <p>Unlimited App Usage</p>
@@ -208,7 +209,7 @@
             <h3>Labrador</h3>
           </div>
           <div class="card-body">
-            <h2>$49 / mo</h2>
+            <h2 class="price-text">$49 / mo</h2>
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
             <p>Unlimited App Usage</p>
@@ -225,7 +226,7 @@
             <h3>Mastiff</h3>
           </div>
           <div class="card-body">
-            <h2>$99 / mo</h2>
+            <h2 class="price-text">$99 / mo</h2>
             <p>Pirority Listing</p>
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
@@ -244,9 +245,11 @@
 
   <!-- Call to Action -->
 
-  <section id="cta">
+  <section class="colored-section" id="cta">
 
-    <h3 class="action-call">Find the True Love of Your Dog's Life Today.</h3>
+    <h3 class="big-heading">Find the True Love of Your Dog's Life Today.</h3>
+
+    <!-- Using bootstrap buttons -->
     <button class="btn btn-dark btn-lg btn-action" type="button"><i class="fa-brands fa-apple"></i> Download</button>
     <button class="btn btn-light btn-lg btn-action" type="button"><i class="fa-brands fa-google-play"></i> Download</button>
 
@@ -255,8 +258,9 @@
 
   <!-- Footer -->
 
-  <footer id="footer">
+  <footer class="white-section" id="footer">
 
+    <!-- Using font awsome fonts from its kit -->
     <i class="icon fa-brands fa-twitter"></i>
     <i class="icon fa-brands fa-facebook-f"></i>
     <i class="icon fa-brands fa-instagram"></i>
